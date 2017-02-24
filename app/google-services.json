@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "472455299614",
+    "project_id": "compartesanisidro"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472455299614:android:e507743b8d24804f",
+        "android_client_info": {
+          "package_name": "com.comparte.labsanisidro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472455299614-i2imtmnljg37bdqi8eopqsjqderkl32r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQPyURl3bcHmFc-XLvs3BwCeBmfIsbiCo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472455299614:android:6c1fb483685a7275",
+        "android_client_info": {
+          "package_name": "com.comparte.labsanisidro.compartesanisidro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472455299614-i2imtmnljg37bdqi8eopqsjqderkl32r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQPyURl3bcHmFc-XLvs3BwCeBmfIsbiCo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

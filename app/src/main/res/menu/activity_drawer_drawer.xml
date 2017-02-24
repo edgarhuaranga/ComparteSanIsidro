@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_top_actividades"
+            android:icon="@drawable/ic_palette_black_24dp"
+            android:title="Top Actividades" />
+        <item
+            android:id="@+id/nav_calificar_actividades"
+            android:icon="@drawable/ic_star_black_24dp"
+            android:title="Calificar actividades" />
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Mi perfil" />
+        <item
+            android:id="@+id/nav_encuestas"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Encuestas" />
+        <item
+            android:id="@+id/nav_contacto"
+            android:icon="@drawable/ic_forum_black_24dp"
+            android:title="Contacto" />
+        <item
+            android:id="@+id/nav_comunidad"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="Comunidad" />
+    </group>
+
+
+
+</menu>
