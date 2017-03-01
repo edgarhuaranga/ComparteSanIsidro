@@ -1,12 +1,8 @@
 package com.comparte.labsanisidro.compartesanisidro;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -20,6 +16,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.comparte.labsanisidro.compartesanisidro.CalificaActividades.CalificarActividadesFragment;
+import com.comparte.labsanisidro.compartesanisidro.Perfil.PerfilFragment;
+import com.comparte.labsanisidro.compartesanisidro.TopActividades.TopActividadesFragment;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -121,13 +120,15 @@ public class DrawerActivity extends AppCompatActivity
         switch (id){
             case R.id.nav_top_actividades:
                 fragment = TopActividadesFragment.newInstance("a", "b");
-                getSupportActionBar().setTitle("Datos personales");
+                getSupportActionBar().setTitle("Top Actividades");
                 break;
             case R.id.nav_calificar_actividades:
-                fragment = CalificarActividadesFragment.newInstance("a", "b");
+                fragment = CalificarActividadesFragment.newInstance("a", account);
                 getSupportActionBar().setTitle("Calificar actividades");
                 break;
             case R.id.nav_perfil:
+                fragment = PerfilFragment.newInstance("a", account);
+                getSupportActionBar().setTitle("Mi perfil");
                 break;
             case R.id.nav_encuestas:
                 break;

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context="com.comparte.labsanisidro.compartesanisidro.TopActividadesFragment">
+    tools:context="com.comparte.labsanisidro.compartesanisidro.TopActividades.TopActividadesFragment">
 
     <LinearLayout
         android:layout_width="wrap_content"

@@ -1,4 +1,4 @@
-package com.comparte.labsanisidro.compartesanisidro;
+package com.comparte.labsanisidro.compartesanisidro.TopActividades;
 
 
 import android.os.Bundle;
@@ -8,6 +8,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.comparte.labsanisidro.compartesanisidro.Model.Actividades;
+import com.comparte.labsanisidro.compartesanisidro.R;
+
+import java.util.ArrayList;
 
 
 /**
@@ -57,11 +62,17 @@ public class ActividadesFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_actividades, container, false);
-        RecyclerView mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view_actividades);
-        LinearLayoutManager mLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
-        mRecyclerView.setLayoutManager(mLayoutManager);
+        RecyclerView recyclerViewActividades = (RecyclerView) view.findViewById(R.id.recycler_view_actividades);
+        LinearLayoutManager llm = new LinearLayoutManager(getContext());
+        recyclerViewActividades.setLayoutManager(llm);
 
+        ArrayList<Actividades> actividades = new ArrayList<>();
+        actividades.add(new Actividades("e2", "cultura","Bicicleteada por ahi", 4, "27/12/92", "https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-0/s480x480/16996400_10154508248853160_633101615063230310_n.jpg?oh=cb4a95e900c40003480f16f06e25c605&oe=59337CE3"));
+        actividades.add(new Actividades("e1", "cultura","Yoga en El Olivar", 4, "27/12/92", "https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/16832138_1253591128028481_8335769873075673821_n.png?oh=6987651decaca8042ea316a05bd33e63&oe=5939F219"));
+        actividades.add(new Actividades("e3", "cultura","Partido Peru Colombia", 4, "27/12/92", "https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-0/s480x480/16996400_10154508248853160_633101615063230310_n.jpg?oh=cb4a95e900c40003480f16f06e25c605&oe=59337CE3"));
+        RecyclerActividadesAdapter recyclerActividadesAdapter = new RecyclerActividadesAdapter(actividades);
 
+        recyclerViewActividades.setAdapter(recyclerActividadesAdapter);
         return view;
     }
 

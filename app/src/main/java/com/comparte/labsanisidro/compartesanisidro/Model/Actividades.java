@@ -1,4 +1,4 @@
-package com.comparte.labsanisidro.compartesanisidro;
+package com.comparte.labsanisidro.compartesanisidro.Model;
 
 /**
  * Created by root on 13/02/17.

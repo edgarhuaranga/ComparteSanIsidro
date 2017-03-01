@@ -8,7 +8,6 @@
     tools:context="com.comparte.labsanisidro.compartesanisidro.BlankFragment">
 
     <android.support.v7.widget.CardView
-
         android:id="@+id/carview_imagen"
         android:layout_width="match_parent"
         android:layout_height="250dp">

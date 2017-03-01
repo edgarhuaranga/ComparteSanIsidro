@@ -1,10 +1,8 @@
-package com.comparte.labsanisidro.compartesanisidro;
+package com.comparte.labsanisidro.compartesanisidro.TopActividades;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 
 import java.util.ArrayList;
 
@@ -23,9 +21,9 @@ public class TopActividadesFragmentAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         ArrayList<Fragment> paginas = new ArrayList<>();
-        paginas.add(BlankFragment.newInstance("a","b"));
-        paginas.add(BlankFragment.newInstance("a","b"));
-        paginas.add(BlankFragment.newInstance("a","b"));
+        paginas.add(ActividadesFragment.newInstance("a"));
+        paginas.add(ActividadesFragment.newInstance("a"));
+        paginas.add(ActividadesFragment.newInstance("a"));
         return paginas.get(position);
 
 
